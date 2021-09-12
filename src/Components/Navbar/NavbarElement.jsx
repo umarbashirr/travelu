@@ -34,6 +34,10 @@ export const NavLogo = styled(LinkR)``;
 export const NavMenu = styled.ul`
   list-style: none;
   display: flex;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 export const NavItem = styled.li`
