@@ -1,13 +1,14 @@
-import React from "react";
-import Navbar from "./Components/Navbar/Navbar";
-import TopBar from "./Components/TopBar/TopBar";
+import React from 'react';
+import Navbar from './Components/Navbar';
+import TopBar from './Components/TopBar/TopBar';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
-    <React.Fragment>
+    <Router>
       <TopBar />
       <Navbar />
-    </React.Fragment>
+    </Router>
   );
 }
 
