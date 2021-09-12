@@ -12,9 +12,9 @@ import {
   ToggleIcon,
 } from './NavbarElement';
 import logo from '../../assets/images/logo.png';
-import { FaSearch, FaUser, FaBars } from 'react-icons/fa';
+import { FaSearch, FaUser, FaTimes, FaBars } from 'react-icons/fa';
 
-function Navbar() {
+function Navbar({ isOpen, navbarToggleHandler }) {
   return (
     <Nav>
       <NavbarContainer>
@@ -51,8 +51,8 @@ function Navbar() {
           <UserIcon to='/'>
             <FaUser />
           </UserIcon>
-          <ToggleIcon>
-            <FaBars />
+          <ToggleIcon onClick={navbarToggleHandler}>
+            {isOpen ? <FaTimes /> : <FaBars />}
           </ToggleIcon>
         </NavCtaContainer>
       </NavbarContainer>
