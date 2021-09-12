@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Link as LinkR } from 'react-router-dom';
+import styled from "styled-components";
+import { Link as LinkR } from "react-router-dom";
 
 export const Nav = styled.nav`
   background-color: #fff;
@@ -9,7 +9,7 @@ export const Nav = styled.nav`
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 900;
 
   @media screen and (max-width: 1024px) {
     transition: all 0.4s ease-in-out;

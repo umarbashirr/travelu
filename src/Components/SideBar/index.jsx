@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Aside,
   AsideLogo,
@@ -6,38 +6,38 @@ import {
   AsideNav,
   AsideNavItem,
   AsideNavLink,
-} from './SideBarElement';
-import logo from '../../assets/images/mobilelogo.png';
-import { FaTimes } from 'react-icons/fa';
+} from "./SideBarElement";
+import logo from "../../assets/images/mobilelogo.png";
+import { FaTimes } from "react-icons/fa";
 
-const SideBar = ({ isOpen, navbarToggleHandler }) => {
+const SideBar = ({ isOpen, toggle }) => {
   return (
-    <Aside>
-      <AsideToggleButton onClick={navbarToggleHandler}>
+    <Aside isOpen={isOpen}>
+      <AsideToggleButton onClick={toggle}>
         <FaTimes />
       </AsideToggleButton>
-      <AsideLogo src={logo} alt='travelu' />
+      <AsideLogo src={logo} alt="travelu" />
       <AsideNav>
         <AsideNavItem>
-          <AsideNavLink to='/'>Home</AsideNavLink>
+          <AsideNavLink to="/">Home</AsideNavLink>
         </AsideNavItem>
         <AsideNavItem>
-          <AsideNavLink to='/'>About Us</AsideNavLink>
+          <AsideNavLink to="/">About Us</AsideNavLink>
         </AsideNavItem>
         <AsideNavItem>
-          <AsideNavLink to='/'>Destinations</AsideNavLink>
+          <AsideNavLink to="/">Destinations</AsideNavLink>
         </AsideNavItem>
         <AsideNavItem>
-          <AsideNavLink to='/'>Tour Package</AsideNavLink>
+          <AsideNavLink to="/">Tour Package</AsideNavLink>
         </AsideNavItem>
         <AsideNavItem>
-          <AsideNavLink to='/'>Blog</AsideNavLink>
+          <AsideNavLink to="/">Blog</AsideNavLink>
         </AsideNavItem>
         <AsideNavItem>
-          <AsideNavLink to='/'>Pages</AsideNavLink>
+          <AsideNavLink to="/">Pages</AsideNavLink>
         </AsideNavItem>
         <AsideNavItem>
-          <AsideNavLink to='/'>Contact Us</AsideNavLink>
+          <AsideNavLink to="/">Contact Us</AsideNavLink>
         </AsideNavItem>
       </AsideNav>
     </Aside>
