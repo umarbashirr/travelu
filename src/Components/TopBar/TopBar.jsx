@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   FaEnvelope,
   FaFacebook,
@@ -6,39 +6,39 @@ import {
   FaPhone,
   FaTwitter,
   FaWhatsapp,
-} from 'react-icons/fa';
-import styled from 'styled-components';
+} from "react-icons/fa";
+import styled from "styled-components";
 
 function TopBar() {
   return (
     <Nav>
       <TopBarContainer>
         <ContactWrapper>
-          <a href='tel:00917889737464'>
+          <a href="tel:00917889737464">
             <FaPhone />
             +91 7889737464
           </a>
-          <a href='mailto:umarbashir93@outlook.com'>
+          <a href="mailto:umarbashir93@outlook.com">
             <FaEnvelope />
             umarbashir93@outlook.com
           </a>
         </ContactWrapper>
         <SocialIconWrapper>
-          <a href='/'>
+          <a href="/">
             <FaFacebook />
           </a>
-          <a href='/'>
+          <a href="/">
             <FaInstagram />
           </a>
-          <a href='/'>
+          <a href="/">
             <FaTwitter />
           </a>
-          <a href='/'>
+          <a href="/">
             <FaWhatsapp />
           </a>
         </SocialIconWrapper>
         <LanguageDropdown>
-          <a href='/'>En</a>
+          <a href="/">En</a>
         </LanguageDropdown>
       </TopBarContainer>
     </Nav>
@@ -48,7 +48,7 @@ function TopBar() {
 export default TopBar;
 
 const Nav = styled.nav`
-  background-color: #304f47;
+  background-color: var(--secondary-color);
   color: #f2f2f2;
   display: flex;
   justify-content: center;

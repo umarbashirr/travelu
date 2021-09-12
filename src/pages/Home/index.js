@@ -1,8 +1,8 @@
 import React, { Fragment, useState } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-import SideBar from "../Components/SideBar";
-import Navbar from "../Components/Navbar";
-import TopBar from "../Components/TopBar/TopBar";
+import SideBar from "../../Components/SideBar";
+import Navbar from "../../Components/Navbar";
+import TopBar from "../../Components/TopBar/TopBar";
+import HeroSlider from "../../Components/HeroSlider";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,6 +16,7 @@ const Home = () => {
       <TopBar />
       <SideBar isOpen={isOpen} toggle={toggle} />
       <Navbar isOpen={isOpen} toggle={toggle} />
+      <HeroSlider />
     </Fragment>
   );
 };
