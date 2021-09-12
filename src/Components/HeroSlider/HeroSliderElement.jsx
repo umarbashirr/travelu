@@ -21,6 +21,11 @@ export const Slide = styled.div`
   align-items: center;
   transition: 1s ease-in-out;
   object-fit: cover;
+  padding: 0 50px;
+
+  @media screen and (max-width: 728px) {
+    padding: 0 30px;
+  }
 `;
 
 export const SlideTextWrapper = styled.div`
@@ -30,10 +35,22 @@ export const SlideTextWrapper = styled.div`
 
 export const SlideTitle = styled.h1`
   font-size: 55px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 728px) {
+    font-size: 25px;
+  }
 `;
 
 export const SlideDesc = styled.p`
   font-size: 30px;
+
+  @media screen and (max-width: 728px) {
+    font-size: 16px;
+  }
 `;
 
 export const SlideCta = styled.button`
